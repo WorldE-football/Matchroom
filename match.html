@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Room</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 id="matchTitle">Liverpool vs Man City</h1>
+    <div id="timer" data-start-time="2026-02-10T18:00:00"></div>
+  </header>
+
+  <main id="chatRoom">
+    <div id="teamAChat" class="chatColumn"></div>
+    <div id="teamBChat" class="chatColumn"></div>
+  </main>
+
+  <aside id="liveHighlights">
+    <h3>Live Highlights</h3>
+  </aside>
+
+  <footer>
+    <input type="text" id="messageInput" placeholder="Type your message">
+    <button id="sendMsgBtn">Send</button>
+    <button id="stickerBtn">Sticker</button>
+  </footer>
+
+  <div id="stickerOverlay"></div>
+</body>
+</html>
