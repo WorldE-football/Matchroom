@@ -1,13 +1,15 @@
 // ===== Firebase Config =====
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MSG_SENDER",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyBAdSOAxtWY5sFFzXX53UG_Mj0gfwf36kM",
+  authDomain: "matchroom-2026.firebaseapp.com",
+  projectId: "matchroom-2026",
+  storageBucket: "matchroom-2026.appspot.com",
+  messagingSenderId: "473403327201",
+  appId: "1:473403327201:web:5ebc8c3a77930418e0eda0"
 };
+
 firebase.initializeApp(firebaseConfig);
+
 const auth = firebase.auth();
 const db = firebase.firestore();
 
