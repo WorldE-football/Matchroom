@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Fan Zone - Matches</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Upcoming Matches</h1>
+    <div id="userProfile">Welcome, <span id="usernameDisplay"></span></div>
+  </header>
+
+  <main id="matchesContainer">
+    <div class="matchCard">
+      <h3>Liverpool vs Man City</h3>
+      <p>Start: 2026-02-10 18:00</p>
+      <button onclick="joinMatch('match1', 'teamA')">Join Match</button>
+    </div>
+    <div class="matchCard">
+      <h3>Barcelona vs Real Madrid</h3>
+      <p>Start: 2026-02-11 20:00</p>
+      <button onclick="joinMatch('match2', 'teamB')">Join Match</button>
+    </div>
+  </main>
+</body>
+</html>
